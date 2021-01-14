@@ -54,6 +54,13 @@ File name is hashed user_id. Each row represent friends of this user and their p
 
 #### Cite
 
-```tex
-//TBD
+```bibtex
+>@inproceedings{kolomeets2021camouflaged,
+                title={Camouflaged bot detection using the friend list},
+                author={Kolomeets, Maxim and Tushkanova, Olga and Levshun, Dmitry and Chechulin, Andrey},
+                booktitle={2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)},
+                pages={},
+                year={2021},
+                organization={IEEE}
+                }
 ```
