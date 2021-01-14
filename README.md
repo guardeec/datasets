@@ -2,11 +2,9 @@
 
 Datasets collected for machine learning and data visualization research in the field of information security.
 
-[TOC]
-
 ### VKontakte bots
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK_logo" style="zoom:80%;" />
+<div style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK_logo" style="zoom:80%;" /></div>
 
 Datasets for social networks bot detection by friend-list. Includes 2 folders: bots and users.
 
