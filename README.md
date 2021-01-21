@@ -10,9 +10,9 @@ Repository contains the datasets taht can be used for experimental evaluation of
 
 Vkontakte_bots folder contains datasets that can be used for training and testing algorithms for social networks bot detection using friend list features. It includes 2 folders: bots and users.
 
-Bot folder contains 8 datasets. Each dataset in the bot folder contains bots from separate bot-selling company. All bots are of different quality. 
-Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. 
-Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  
+Bot folder contains 8 datasets. Each dataset in the bot folder contains bots from separate bot-selling company. All bots are of different quality. <br/>
+Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. <br/>
+Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  <br/>
 High quality (HIGH) means that bots are probably controlled by human or users from an exchange platform.
 
 The quality was evaluated by the description on the website of the company that traded bots.
