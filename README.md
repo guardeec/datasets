@@ -74,7 +74,7 @@ Missing values are mark as '-1'. It  indicates that profile or field has been cl
 ### Bot Market
 
 <p align="center">
-  <img src="http://drive.google.com/uc?export=view&id=1cAdoPt3WibBMxgnti_NonUm-JXikde6F" alt="VK_logo" style="zoom:5%;" />
+  <img src="http://drive.google.com/uc?export=view&id=1cAdoPt3WibBMxgnti_NonUm-JXikde6F" alt="market_logo" style="zoom:5%;" width="300" />
 </p>
 
 
