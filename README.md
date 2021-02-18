@@ -1,29 +1,35 @@
 # Security Datasets
 
-Datasets collected for machine learning and data visualization research in the field of information security.
+Repository contains the datasets taht can be used for experimental evaluation of supervised machine learning algorithms as well as for data visualization research in the field of information security.
 
-### VKontakte bots
+### Bots from Vkontakte social network
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK_logo" style="zoom:80%;" />
 </p>
 
-Datasets for social networks bot detection by friend-list. Includes 2 folders: bots and users.
+Vkontakte_bots folder contains datasets that can be used for training and testing algorithms for social networks bot detection using friend list features. It includes 2 folders: bots and users.
 
-Bot folder includes 8 datasets - one for each company that sell bots.
+Bot folder contains 8 datasets. Each dataset in the bot folder contains bots from separate bot-selling company. All bots are of different quality. <br/>
+Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. <br/>
+Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  <br/>
+High quality (HIGH) means that bots are probably controlled by human or users from an exchange platform.
 
-| Name of company that provide bots | Quality | Description                                                  |
-| --------------------------------- | ------- | ------------------------------------------------------------ |
-| PARIK                             | LOW     | probably, auto-generated accounts that are controlled by software. |
-| PARIK                             | MID     | probably, user-like bots that are controlled by software.    |
-| PARIK                             | HIGH    | probably, bots that are controlled by human or users from an exchange platform. |
-| OLENI                             | LOW     | probably, auto-generated accounts that are controlled by software. |
-| OLENI                             | MID     | probably, user-like bots that are controlled by software.    |
-| OLENI                             | HIGH    | probably, bots that are controlled by human or users from an exchange platform. |
-| MARSHRUTKA                        | LOW     | users from the exchange platform.                            |
-| MARSHRUTKA                        | HIGH    | users from the exchange platform with more filled profiles.  |
+The quality was evaluated by the description on the website of the company that traded bots.
 
-User folder includes 10 datasets - one dataset includes users collected from one group.
+
+| Name of company that provide bots | Quality |
+| --------------------------------- | ------- |
+| PARIK                             | LOW     |
+| PARIK                             | MID     |
+| PARIK                             | HIGH    |
+| OLENI                             | LOW     |
+| OLENI                             | MID     |
+| OLENI                             | HIGH    |
+| MARSHRUTKA                        | LOW     |
+| MARSHRUTKA                        | HIGH    |
+
+User folder contains 10 datasets. Each datasets contains real social network random users collected from separate social network group.
 
 | Name of group | Type       | Description of group             |
 | ------------- | ---------- | -------------------------------- |
@@ -38,19 +44,18 @@ User folder includes 10 datasets - one dataset includes users collected from one
 | VARENNE       | mass media | Belarus news                     |
 | VELO          | activists  | development of bicycle transport |
 
-File name is hashed user_id. Each row represent friends of this user and their properties:
+The dataset filename is hashed user_id. Each row represent friends of this user and their properties:
+- hashed user id (id_of_friend_hashed).
+- the number of friends (friends_count). 'Friend' in the context of Vkontakte social network is a user that confirm the friend request from other user.
+- the number of groups (groups_count). In VKontakte social network each user can join  groups. Groups can be dedicated to some event or social interest.
+- the number of subscriptions (followers_count). In VKontakte social network a user can subscribe to another user. The difference between a subscription and a friendship is that you don’t need another user’s confirmation to subscribe.
+- the number of followers (subscriptions_count). Followers are users who subscribed to one's account.
+- the number of photo albums (albums_count) attached to user profile. 
+- the number of photos (photos_count) attached to user profile. 
+- the number of posts in user profile. Each VKontakte user has his/her microblog. The number of posts is the number of records in this microblog.
+- how old is id. As we hashed id, we include account 'age' as separate field. Lower values are more old accounts.
 
-- Hashed user id.
-- The number of friends. Each user has its friend list. To make friends, a user must send a request, and another user must confirm it.
-- The number of groups. In VKontakte each user can join groups. Groups can be dedicated to some event or social interest.
-- The number of subscriptions. A person can subscribe to another person. The difference between a subscription and a friendship is that you don’t need another person’s confirmation to subscribe.
-- The number of followers. Followers are people who subscribed to your account.
-- The number of photos. A person can upload some photos.
-- The number of albums. A person can combine photos into albums.
-- The number of posts. Each VKontakte user has his/her microblog. The number of posts is the number of records in this microblog.
-- How old is id. As we hashed id, we include account age as separate field. Lower values are more old accounts.
-
--1 value indicates that the profile or field has been closed by privacy settings
+Missing values are mark as '-1'. It  indicates that profile or field has been closed by privacy settings.
 
 #### Cite
 
