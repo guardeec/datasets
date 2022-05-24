@@ -1,6 +1,6 @@
 # Security Datasets
 
-Repository contains several datasets related to cybersecurity of social networks, and can be used for research in bot detection, misinformation analysis, bot metrics calculation, etc.
+The repository contains several datasets related to the cybersecurity of social networks and can be used for research in bot detection, misinformation analysis, bot metrics calculation, etc.
 
 ### MKVK2021
 
@@ -8,23 +8,23 @@ Repository contains several datasets related to cybersecurity of social networks
   <img src="https://github.com/guardeec/datasets/blob/main/readme_img/VK_logo.png?raw=true" alt="vk_logo" width="200" />
 </p>
 
-MKVK2021 folder contains datasets with bots are real-users from VKontakte social network. 
+MKVK2021 folder contains datasets with bots and real-users from VKontakte social network. 
 
-It includes 2 csv files: bots.csv and users.csv
+It includes 2 CSV files: bots.csv and users.csv
 
 **bots.csv**
 
-Bots were collected directly from bot-traders by purchasing method (is a ground-truth bot labels).
-Bots also include bot-trader label and quality label.
+Bots were collected directly from bot-traders by purchasing method (is a ground-truth bot label).
+Bots also include bot-trader labels and quality labels.
 
-The quality was evaluated with expert method based on the description on bot-trader offer:
+The quality was evaluated with the expert method based on the description of bot-trader offer:
 1. Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. <br/>
 2. Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  <br/>
-3. High quality (HIGH) means that bots are probably controlled by human or users from an exchange platform (bot-trader pay real users to perform malicious actions for money).
+3. High quality (HIGH) means that bots are probably controlled by humans or users from an exchange platform (bot-trader pays real-users to perform malicious actions for money).
 
 The bot-trader label:
 1. OLENI and PARIK - classical bot shops.
-2. MARSHRUTKA - bot exchange platform, where one pay real-users for malicious actions (fake reviews, etc.).
+2. MARSHRUTKA - bot exchange platform, where one pays real-users for malicious actions (fake reviews, etc.).
 
 | Name of bot-trader that provide bots | Quality |
 | --------------------------------- | ------- |
@@ -137,32 +137,32 @@ Some properties:
   <img src="https://github.com/guardeec/datasets/blob/main/readme_img/TT_logo.png?raw=true" alt="vk_logo" width="300" />
 </p>
 
-Datasets with result of experiment where users tried to recognise bots (**VK**ontakte **T**uring **T**est).
+Datasets with the result of an experiment where users tried to recognise bots (**VK**ontakte **T**uring **T**est).
 
 Includes 2 files: *answers.csv* with results of experiment and *areHumansCanDetectBots.ipynb* with processing of the results.
 
 **answers.csv** include the following fields:
 1. time - timestamp of the annotator answer
-2. role - role of annotator that reflect bot detection scenario (see. list below)
+2. role - the role of annotator that reflects bot detection scenario (see. list below)
 3. annotator_id - Telegram id of annotator
 4. analysed_account_id - VKontakte id of analysed account
-5. answer - label of annotator. Can be USER, BOT or IDN (i don't know)
+5. answer - the label of the annotator. Can be USER, BOT, or IDN (i don't know)
 6. ground_truth_label - real label
-7. bot_quality - quality of analysed bot account (NaN for real users), see. dataset MKVK2021 (for MARSHRUTKA bot-trader - quality was replaced with LIVE)
+7. bot_quality - the quality of analysed bot account (NaN for real users), see. dataset MKVK2021 (for MARSHRUTKA bot-trader - the quality was replaced with LIVE)
 
-To each annotator we give a role. 
+To each annotator, we give a role. 
 Roles can be:
-1. BOTS+RANDOM - 50% accounts are MKVK2021 bots and 50% are real users. Real users are randomly selected among all VKontakte accounts. Reflects scenario when annotator tries to detect bot among random accounts.  
-2. BOTS+GROUPS_SHIFTED - 50% accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among MKVK2021 real-users accounts. Reflects scenario when annotator tries to detect bot among accounts with homophily from large community.
-3. BOTS+STUDENTS - 50% accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among verified students accounts of one University. Reflects scenario when annotator tries to detect bot among accounts with strong homophily from small community.
-4. BOTS_ONLY - 100% accounts are MKVK2021 bots.
+1. BOTS+RANDOM - 50% of accounts are MKVK2021 bots and 50% are real users. Real users are randomly selected among all VKontakte accounts. Reflects scenario when annotator tries to detect bot among random accounts.  
+2. BOTS+GROUPS_SHIFTED - 50% of accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among MKVK2021 real-users accounts. Reflects scenario when annotator tries to detect bot among accounts with homophily from a large community.
+3. BOTS+STUDENTS - 50% of accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among verified student accounts of one University. Reflects scenario when annotator tries to detect bot among accounts with strong homophily from a small community.
+4. BOTS_ONLY - 100% of accounts are MKVK2021 bots.
 
 **areHumansCanDetectBots.ipynb** include code for result processing:
-1. Test of hypothesis that humans can detect bots with different qualities in different scenarios.
-2. Calculation of confidence intervals that describe human ability to detect bots of different qualities in different scenarios.
-3. Calculation hypothetical classifier efficiency measures that describe how classification efficiency decreased when using human annotated datasets for supervised ML bot detection. 
+1. Test of hypotheses that humans can detect bots with different qualities in different scenarios.
+2. Calculation of confidence intervals that describe the human ability to detect bots of different qualities in different scenarios.
+3. Calculation of hypothetical classifier efficiency measures that describe how classification efficiency decreased when using human-annotated datasets for supervised ML bot detection. 
 
-More detailed experiment description presented in paper:
+More detailed experiment description presented in the paper:
 ```bibtex
 >@inproceedings{kolomeets2022netglow,
         title={Experimental evaluation: can humans recognize social media bots?},
