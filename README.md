@@ -133,8 +133,41 @@ Some properties:
 
 ### MKVKTT2021
 
-Datasets with result of experiment where users tried to recognise bots (Turing test).
+Datasets with result of experiment where users tried to recognise bots (**VK**ontakte **T**uring **T**est).
 
-TBD
+Includes 2 files: *answers.csv* with results of experiment and *areHumansCanDetectBots.ipynb* with processing of the results.
+
+**answers.csv** include the following fields:
+1. time - timestamp of the annotator answer
+2. role - role of annotator that reflect bot detection scenario (see. list below)
+3. annotator_id - Telegram id of annotator
+4. analysed_account_id - VKontakte id of analysed account
+5. answer - label of annotator. Can be USER, BOT or IDN (i don't know)
+6. ground_truth_label - real label
+7. bot_quality - quality of analysed bot account (NaN for real users), see. dataset MKVK2021 (for MARSHRUTKA bot-trader - quality was replaced with LIVE)
+
+To each annotator we give a role. 
+Roles can be:
+1. BOTS+RANDOM - 50% accounts are MKVK2021 bots and 50% are real users. Real users are randomly selected among all VKontakte accounts. Reflects scenario when annotator tries to detect bot among random accounts.  
+2. BOTS+GROUPS_SHIFTED - 50% accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among MKVK2021 real-users accounts. Reflects scenario when annotator tries to detect bot among accounts with homophily from large community.
+3. BOTS+STUDENTS - 50% accounts are MKVK2021 bots and 50% are real-users. Real users are randomly selected among verified students accounts of one University. Reflects scenario when annotator tries to detect bot among accounts with strong homophily from small community.
+4. BOTS_ONLY - 100% accounts are MKVK2021 bots.
+
+**areHumansCanDetectBots.ipynb** include code for result processing:
+1. Test of hypothesis that humans can detect bots with different qualities in different scenarios.
+2. Calculation of confidence intervals that describe human ability to detect bots of different qualities in different scenarios.
+3. Calculation hypothetical classifier efficiency measures that describe how classification efficiency decreased when using human annotated datasets for supervised ML bot detection. 
+
+More detailed experiment description presented in paper:
+```bibtex
+>@inproceedings{kolomeets2022netglow,
+        title={Experimental evaluation: can humans recognize social media bots?},
+        author={Kolomeets, Maxim and Vitkova, Lidia and Tushkanova, Olga and Chechulin, Andrey},
+        booktitle={Proc. of the Networks in the Global World 2022 (NetGloW 2020)},
+        pages={},
+        year={2022},
+        organization={}
+}
+```
 
 
