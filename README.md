@@ -133,6 +133,10 @@ Some properties:
 
 ### MKVKTT2021
 
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/TT_logo.png?raw=true" alt="vk_logo" width="300" />
+</p>
+
 Datasets with result of experiment where users tried to recognise bots (**VK**ontakte **T**uring **T**est).
 
 Includes 2 files: *answers.csv* with results of experiment and *areHumansCanDetectBots.ipynb* with processing of the results.
