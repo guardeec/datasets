@@ -4,6 +4,10 @@ Repository contains several datasets related to cybersecurity of social networks
 
 ### MKVK2021
 
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/VK_logo.png?raw=true" alt="vk_logo" width="200" />
+</p>
+
 MKVK2021 folder contains datasets with bots are real-users from VKontakte social network. 
 
 It includes 2 csv files: bots.csv and users.csv
@@ -56,12 +60,12 @@ Communities description:
 
 ```bibtex
 @inproceedings{kolomeets2021camouflaged,
-      title={Camouflaged bot detection using the friend list},
-      author={Kolomeets, Maxim and Tushkanova, Olga and Levshun, Dmitry and Chechulin, Andrey},
-      booktitle={2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)},
-      pages={253--259},
-      year={2021},
-      organization={IEEE}
+        title={Camouflaged bot detection using the friend list},
+        author={Kolomeets, Maxim and Tushkanova, Olga and Levshun, Dmitry and Chechulin, Andrey},
+        booktitle={2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)},
+        pages={253--259},
+        year={2021},
+        organization={IEEE}
 }
 ```
 
@@ -69,17 +73,21 @@ or
 
 ```bibtex
 @article{kolomeets2021bot,
-      title={Bot detection by friends graph in social networks},
-      author={Kolomeets, Maxim and Chechulin, Andrey and Kotenko, Igor},
-      journal={JoWUA},
-      volume={12},
-      pages={141--159},
-      year={2021}
+        title={Bot detection by friends graph in social networks},
+        author={Kolomeets, Maxim and Chechulin, Andrey and Kotenko, Igor},
+        journal={JoWUA},
+        volume={12},
+        pages={141--159},
+        year={2021}
 }
 ```
 
 
 ### MKMARKET2021
+
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/market.png?raw=true" alt="vk_logo" width="300" />
+</p>
 
 Datasets for bot market analysis. Includes 2 files: buy (to buy account) and rent (rent activity).
 
@@ -88,8 +96,9 @@ Some properties:
 - Russian Internet segment.
 - 1657 offers for renting and 45 for buying.
 - 5 social networks: VKontakte, Instagram, Telegram, YouTube, TikTok.
-- Datasets are marked up programmatically (may contain minor bugs).
+- Datasets are labeled programmatically (may contain minor errors).
 - Original description in Russian (use a translator if needed).
+- 2021 year.
 
 **Rent file** – offers to rent a bot (you do not receive a login and password, but the seller will perform the desired action - give 1000 likes, write comments, etc.). Each row represent offer properties:
 
@@ -113,11 +122,19 @@ Some properties:
 #### Cite
 ```bibtex
 >@inproceedings{kolomeets2021market,
-                title={Analysis of the Malicious Bots Market},
-                author={Kolomeets, Maxim and Chechulin, Andrey},
-                booktitle={TBD},
-                pages={TBD},
-                year={2021},
-                organization={TBD}
-                }
+        title={Analysis of the Malicious Bots Market},
+        author={Kolomeets, Maxim and Chechulin, Andrey},
+        booktitle={TBD},
+        pages={TBD},
+        year={2021},
+        organization={TBD}
+}
 ```
+
+### MKVKTT2021
+
+Datasets with result of experiment where users tried to recognise bots (Turing test).
+
+TBD
+
+
