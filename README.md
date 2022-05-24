@@ -121,13 +121,13 @@ Some properties:
 
 #### Cite
 ```bibtex
->@inproceedings{kolomeets2021market,
+@inproceedings{kolomeets2021analysis,
         title={Analysis of the Malicious Bots Market},
         author={Kolomeets, Maxim and Chechulin, Andrey},
-        booktitle={TBD},
-        pages={TBD},
+        booktitle={2021 29th Conference of Open Innovations Association (FRUCT)},
+        pages={199--205},
         year={2021},
-        organization={TBD}
+        organization={IEEE}
 }
 ```
 
