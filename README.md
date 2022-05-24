@@ -1,24 +1,28 @@
 # Security Datasets
 
-Repository contains the datasets taht can be used for experimental evaluation of supervised machine learning algorithms as well as for data visualization research in the field of information security.
+Repository contains several datasets related to cybersecurity of social networks, and can be used for research in bot detection, misinformation analysis, bot metrics calculation, etc.
 
-### Bots from Vkontakte social network
+### MKVK2021
 
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK_logo" style="zoom:80%;" />
-</p>
+MKVK2021 folder contains datasets with bots are real-users from VKontakte social network. 
 
-Vkontakte_bots folder contains datasets that can be used for training and testing algorithms for social networks bot detection using friend list features. It includes 2 folders: bots and users.
+It includes 2 csv files: bots.csv and users.csv
 
-Bot folder contains 8 datasets. Each dataset in the bot folder contains bots from separate bot-selling company. All bots are of different quality. <br/>
-Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. <br/>
-Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  <br/>
-High quality (HIGH) means that bots are probably controlled by human or users from an exchange platform.
+**bots.csv**
 
-The quality was evaluated by the description on the website of the company that traded bots.
+Bots were collected directly from bot-traders by purchasing method (is a ground-truth bot labels).
+Bots also include bot-trader label and quality label.
 
+The quality was evaluated with expert method based on the description on bot-trader offer:
+1. Low quality (LOW) means that bots from this company are probably auto-generated accounts that are controlled by software. <br/>
+2. Medium quality (MID) means that bots are probably user-like bots that are controlled by software.  <br/>
+3. High quality (HIGH) means that bots are probably controlled by human or users from an exchange platform (bot-trader pay real users to perform malicious actions for money).
 
-| Name of company that provide bots | Quality |
+The bot-trader label:
+1. OLENI and PARIK - classical bot shops.
+2. MARSHRUTKA - bot exchange platform, where one pay real-users for malicious actions (fake reviews, etc.).
+
+| Name of bot-trader that provide bots | Quality |
 | --------------------------------- | ------- |
 | PARIK                             | LOW     |
 | PARIK                             | MID     |
@@ -29,9 +33,13 @@ The quality was evaluated by the description on the website of the company that 
 | MARSHRUTKA                        | LOW     |
 | MARSHRUTKA                        | HIGH    |
 
-User folder contains 10 datasets. Each datasets contains real social network random users collected from separate social network group.
+**user.csv** 
 
-| Name of group | Type       | Description of group             |
+users.csv contains random real-users that pose some activity from 10 communities.
+
+Communities description:
+
+| Name of community | Type       | Description of group             |
 | ------------- | ---------- | -------------------------------- |
 | BIGFEST       | festival   | cartoon festival                 |
 | HCAKBARS      | sport      | hockey club fun community        |
@@ -44,39 +52,34 @@ User folder contains 10 datasets. Each datasets contains real social network ran
 | VARENNE       | mass media | Belarus news                     |
 | VELO          | activists  | development of bicycle transport |
 
-The dataset filename is hashed user_id. Each row represent friends of this user and their properties:
-- hashed user id (id_of_friend_hashed).
-- the number of friends (friends_count). 'Friend' in the context of Vkontakte social network is a user that confirm the friend request from other user.
-- the number of groups (groups_count). In VKontakte social network each user can join  groups. Groups can be dedicated to some event or social interest.
-- the number of subscriptions (followers_count). In VKontakte social network a user can subscribe to another user. The difference between a subscription and a friendship is that you don’t need another user’s confirmation to subscribe.
-- the number of followers (subscriptions_count). Followers are users who subscribed to one's account.
-- the number of photo albums (albums_count) attached to user profile. 
-- the number of photos (photos_count) attached to user profile. 
-- the number of posts in user profile. Each VKontakte user has his/her microblog. The number of posts is the number of records in this microblog.
-- how old is id. As we hashed id, we include account 'age' as separate field. Lower values are more old accounts.
-
-Missing values are mark as '-1'. It  indicates that profile or field has been closed by privacy settings.
-
-#### Cite
+#### Cite this dataset as:
 
 ```bibtex
->@inproceedings{kolomeets2021camouflaged,
-                title={Camouflaged bot detection using the friend list},
-                author={Kolomeets, Maxim and Tushkanova, Olga and Levshun, Dmitry and Chechulin, Andrey},
-                booktitle={2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)},
-                pages={},
-                year={2021},
-                organization={IEEE}
-                }
+@inproceedings{kolomeets2021camouflaged,
+      title={Camouflaged bot detection using the friend list},
+      author={Kolomeets, Maxim and Tushkanova, Olga and Levshun, Dmitry and Chechulin, Andrey},
+      booktitle={2021 29th Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP)},
+      pages={253--259},
+      year={2021},
+      organization={IEEE}
+}
+```
+
+or
+
+```bibtex
+@article{kolomeets2021bot,
+      title={Bot detection by friends graph in social networks},
+      author={Kolomeets, Maxim and Chechulin, Andrey and Kotenko, Igor},
+      journal={JoWUA},
+      volume={12},
+      pages={141--159},
+      year={2021}
+}
 ```
 
 
-### Bot Market
-
-<p align="center">
-  <img src="http://drive.google.com/uc?export=view&id=1cAdoPt3WibBMxgnti_NonUm-JXikde6F" alt="market_logo" style="zoom:5%;" width="300" />
-</p>
-
+### MKMARKET2021
 
 Datasets for bot market analysis. Includes 2 files: buy (to buy account) and rent (rent activity).
 
