@@ -162,12 +162,12 @@ Roles can be:
 2. Calculation of confidence intervals that describe the human ability to detect bots of different qualities in different scenarios.
 3. Calculation of hypothetical classifier efficiency measures that describe how classification efficiency decreased when using human-annotated datasets for supervised ML bot detection. 
 
-More detailed experiment description presented in the paper:
+More detailed experiment description presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
 ```bibtex
 >@inproceedings{kolomeets2022netglow,
         title={Experimental evaluation: can humans recognize social media bots?},
         author={Kolomeets, Maxim and Vitkova, Lidia and Tushkanova, Olga and Chechulin, Andrey},
-        booktitle={Proc. of the Networks in the Global World 2022 (NetGloW 2020)},
+        booktitle={Proc. of the Networks in the Global World 2022 (NetGloW 2022)},
         pages={},
         year={2022},
         organization={}
