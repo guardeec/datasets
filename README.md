@@ -167,7 +167,7 @@ More detailed experiment description presented in the paper (cite as) (paper is 
 >@inproceedings{kolomeets2022netglow,
         title={Experimental evaluation: can humans recognize social media bots?},
         author={Kolomeets, Maxim and Vitkova, Lidia and Tushkanova, Olga and Chechulin, Andrey},
-        booktitle={Proc. of the Networks in the Global World 2022 (NetGloW 2022)},
+        booktitle={},
         pages={},
         year={2022},
         organization={}
