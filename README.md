@@ -196,11 +196,11 @@ Folder MKMETRIC2022 consists of the following files.
 1. dataset - identifier of bot offer (bots from the same bot offer have the same metrics - see file **offers.csv**)
 2. id - VKontakte identifier
 4. label - can be [bot, random, shift, student]. [random, shift, student] are "user label" that reflects different level of homophily.
-5. Trust, Trust_IDN, TrustZ, TrustZ_IDNZ ,TrustNZ, TrustNZ_IDNNZ, SR, price, BTT, speed, NBQ - metrics (is None for users).
+5. Trust, Trust_IDN, TrustZ, TrustZ_IDN ,TrustNZ, TrustNZ_IDN, SR, price, BTT, speed, NBQ - metrics (is None for users).
 
 **offers.csv** is a list of bot offers from bot traders with the following fields:
 1. dataset - name of the offer (corresponds to dataset in **indentifiers.csv**)
-2. Trust, Trust_IDN, TrustZ, TrustZ_IDNZ ,TrustNZ, TrustNZ_IDNNZ, SR, price, BTT, speed, NBQ - metrics
+2. Trust, Trust_IDN, TrustZ, TrustZ_IDN ,TrustNZ, TrustNZ_IDN, SR, price, BTT, speed, NBQ - metrics
 
 **TuringTest.csv** is the additional file with the results of Turing Test on basis of which we calculated the Trust metrics. You can use that file if you want to impliment your own metrics. Fields:
 1. time - timestamp of an answer
