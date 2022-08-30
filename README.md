@@ -174,4 +174,51 @@ More detailed experiment description presented in the paper (cite as) (paper is 
 }
 ```
 
+### MKMETRIC2022
+
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/metrics_logo.png?raw=true" alt="metrics_logo" width="200" />
+</p>
+
+MKMETRIC2022 is dataset with VKontakte bot identifiers and their metrics:
+1. Price - price of a bot per like (can be remapped for another activity) in range [0, Inf]
+2. NBQ - normolized bot quality with values [LOW=0, MID=1, HIGH=2]
+3. BTT - bot trader type that can be [SHOP=0, ECHANGE=1]
+4. speed - how fast bot can perform an attack in range [MINUTE=0, HOUR=1, DAY=2]
+5. SR - survival rate that reflects probability that bot will be blocked by social network in range [0, 1]
+6. Trust - 6 varuations of Trust measure that reflects how well users recognise bot.
+
+Dataset consist of 22325 bot accounts (among which 18444 are unique), and 107598 users separated into 3 groups: *random* - random accounts (low social homophily), *shift* - accounts from communities that pose some activity in VK (medium social homophily), *student* - verified users wich are students of one university (high social homophily).
+
+Folder MKMETRIC2022 consists of the following files.
+
+**indentifiers.csv** is a list of VKontakte bots and real users with the following fields:
+1. dataset - identifier of bot offer (bots from the same bot offer have the same metrics - see file **offers.csv**)
+2. id - VKontakte identifier
+4. label - can be [bot, random, shift, student]. [random, shift, student] are "user label" that reflects different level of homophily.
+5. Trust, Trust_IDN, TrustZ, TrustZ_IDNZ ,TrustNZ, TrustNZ_IDNNZ, SR, price, BTT, speed, NBQ - metrics (is None for users).
+
+**offers.csv** is a list of bot offers from bot traders with the following fields:
+1. dataset - name of the offer (corresponds to dataset in **indentifiers.csv**)
+2. Trust, Trust_IDN, TrustZ, TrustZ_IDNZ ,TrustNZ, TrustNZ_IDNNZ, SR, price, BTT, speed, NBQ - metrics
+
+**TuringTest.csv** is the additional file with the results of Turing Test on basis of which we calculated the Trust metrics. You can use that file if you want to impliment your own metrics. Fields:
+1. time - timestamp of an answer
+2. annotator - id of annotator
+3. analysed_acc_vk_id - id of analysed VKontakte account
+4. human_answer - answer of human for analysed VKontakte account, can be [BOT, USER, IDN]. (IDN is "I don't know")
+5. true_label - real label of analysed VKontakte account, can be [BOT, USER] in array (as some accounts may be in multiple datasets)
+6. dataset - identifier of dataset in array (as some accounts may be in multiple datasets) (see **indentifiers.csv**)
+
+More details about metrics are presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
+```bibtex
+>@inproceedings{kolomeets2022netglow,
+        title={Social bot metrics},
+        author={Kolomeets, Maxim and Chechulin, Andrey},
+        booktitle={},
+        pages={},
+        year={2022},
+        organization={}
+}
+```
 
