@@ -177,7 +177,7 @@ More detailed experiment description presented in the paper (cite as) (paper is 
 ### MKMETRIC2022
 
 <p align="center">
-  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/metric_logo.png?raw=true" alt="metrics_logo" width="300" />
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/metrics_logo.png?raw=true" alt="metrics_logo" width="300" />
 </p>
 
 MKMETRIC2022 is dataset with VKontakte bot identifiers and their metrics:
