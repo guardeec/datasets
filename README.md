@@ -53,10 +53,10 @@ Folder MKMETRIC2022 consists of the following files.
 More details about metrics are presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
 
 ```bibtex
->@inproceedings{kolomeets2022netglow,
+>@inproceedings{MKMETRIC2022,
         title={Social bot metrics},
         author={Kolomeets, Maxim and Chechulin, Andrey},
-        booktitle={},
+        booktitle={preprint},
         pages={},
         year={2022},
         organization={}
@@ -99,10 +99,10 @@ Roles can be:
 
 More detailed experiment description presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
 ```bibtex
->@inproceedings{kolomeets2022netglow,
+>@inproceedings{MKVKTT2021,
         title={Experimental evaluation: can humans recognize social media bots?},
         author={Kolomeets, Maxim and Vitkova, Lidia and Tushkanova, Olga and Chechulin, Andrey},
-        booktitle={},
+        booktitle={preprint},
         pages={},
         year={2022},
         organization={}
