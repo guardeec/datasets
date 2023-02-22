@@ -50,7 +50,7 @@ Folder MKMETRIC2022 consists of the following files.
 |5| true_label | a real label of analysed VKontakte account, can be [BOT, USER] in an array (as some accounts may be in multiple datasets)
 |6| dataset | identifier of the dataset in the array (as some accounts may be in multiple datasets) (see **indentifiers.csv**)
 
-More details about metrics are presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
+More details about metrics are presented in the paper (cite as):
 
 ```bibtex
 >@article{MKMETRIC2022,
