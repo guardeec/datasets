@@ -53,13 +53,14 @@ Folder MKMETRIC2022 consists of the following files.
 More details about metrics are presented in the paper (cite as) (paper is under review, I can provide a preprint upon request):
 
 ```bibtex
->@inproceedings{MKMETRIC2022,
+>@article{MKMETRIC2022,
         title={Social bot metrics},
         author={Kolomeets, Maxim and Chechulin, Andrey},
-        booktitle={preprint},
-        pages={},
-        year={2022},
-        organization={}
+        journal={Social Network Analysis and Mining},
+        volume={13},
+        number={36},
+        year={2023},
+        publisher={Springer Nature}
 }
 ```
 
