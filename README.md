@@ -155,7 +155,7 @@ Some properties:
 |3| price | price for 1 bot.
 |4| sn | so far only VKontakte.
 
-#### Cite
+#### Cite ([paper](https://ieeexplore.ieee.org/document/9435421)) ([preprint](https://www.researchgate.net/publication/351855704_Analysis_of_the_Malicious_Bots_Market))
 ```bibtex
 @inproceedings{kolomeets2021analysis,
         title={Analysis of the Malicious Bots Market},
@@ -217,7 +217,7 @@ The bot-trader label:
 | VARENNE       | mass media | Belarus news                     |
 | VELO          | activists  | development of bicycle transport |
 
-#### Cite this dataset as:
+#### Cite this dataset as ([paper](https://ieeexplore.ieee.org/document/9407191)) ([preprint](https://www.researchgate.net/publication/351655569_Camouflaged_bot_detection_using_the_friend_list)):
 
 ```bibtex
 @inproceedings{kolomeets2021camouflaged,
@@ -230,7 +230,7 @@ The bot-trader label:
 }
 ```
 
-or
+or ([paper](https://isyou.info/jowua/papers/jowua-v12n2-6.pdf)) ([preprint](https://www.researchgate.net/publication/361413504_Bot_detection_by_friends_graph_in_social_networks))
 
 ```bibtex
 @article{kolomeets2021bot,
