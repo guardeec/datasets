@@ -67,7 +67,7 @@ More details about metrics are presented in the [paper](https://link.springer.co
 ### MKVKTT2021
 
 <p align="center">
-  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/TT_logo.png?raw=true" alt="vk_logo" width="300" />
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/TT_logo_new.png?raw=true" alt="vk_logo" width="300" />
 </p>
 
 Datasets resulted from an experiment where users tried recognising bots (**VK**ontakte **T**uring **T**est).
