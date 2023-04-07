@@ -105,7 +105,7 @@ More detailed experiment description presented in the paper (cite as) (paper is 
         author={Kolomeets, Maxim and Vitkova, Lidia and Tushkanova, Olga and Chechulin, Andrey},
         booktitle={preprint},
         pages={},
-        year={2022},
+        year={2023},
         organization={}
 }
 ```
