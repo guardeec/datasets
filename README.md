@@ -2,13 +2,54 @@
 
 The repository contains several datasets related to the cybersecurity of social networks for research in bot detection, misinformation analysis, bot market analysis, bot metrics calculation, etc.
 
+### MKWM2022
+
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/MKWM2022.png?raw=true" alt="metrics_logo" width="300" />
+</p>
+
+MKWM2022 is the dataset with Russian-Ukrainian war related comments from top Russian media based on their VKontakte web pages.
+
+We repeated the data collection process three times at three different time points:
+1. On 22 February 2022, which was two days before the war, to collect comments from the preceding day.
+2. On 29 March 2022, which was five days after the war began, to collect comments from the previous seven days.
+3. On 4 April 2022, which was eleven days after the war began, to collect comments from the previous seven days.
+
+The dataset consists of 47 media, overall 1351478 comments from 167273 authors. Each comment was labeled as *"is about the war?"*, *"is pro-Russian?"*, *"is pro-Ukrainian?"* using the tuned RuBert trained on Telegram Russian and Ukrainian war-related channels.
+
+Each media is a separate CSV file with the following structure:
+
+| # | column        | column description                                                                                     |
+|-|---------------|--------------------------------------------------------------------------------------------------------|
+|1| text          | the text of the comment (note, it is in Russian, so use translator if needed)              
+|2| user_id_hashed| hashed user's VKontakte identifier                                               
+|3| war           | result of classification *"is comment about the war"* with confidence [0,1]                                                        
+|4| ua            | result of classification *"is pro-Ukrainian?"* with confidence [0,1]. To get pro-Ukrainian comments we commend use threshold *>0.9*                         
+|5| ru            | result of classification *"is pro-Russian?"* with confidence [0,1]. To get pro-Russian comments we commend use threshold *>0.9*
+|6| datetime      | datetime in a string format yyyy-MM-dd HH:mm:ss  
+|7| media         | name of the media  
+
+More details about dataset are presented in the [preprint](https://www.researchgate.net/publication/TODO) (accepted on MAISoN co-located with IJCAI 2023) (cite as):
+
+```bibtex
+>@article{MKWM2022,
+        title={Leveraging Machine Learning and Russian Social Media Data to Expose Censorship and Public Opinion Bias in the Russian-Ukrainian War},
+        author={Kolomeets, Maxim and Lei, Shi},
+        journal={Workshop on Mining Actionable Insights from Social Networks (MAISoN) in conjunction with the 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023)},
+        volume={},
+        number={},
+        year={2023},
+        publisher={}
+}
+```
+
 ### MKMETRIC2022
 
 <p align="center">
   <img src="https://github.com/guardeec/datasets/blob/main/readme_img/metrics_logo.png?raw=true" alt="metrics_logo" width="300" />
 </p>
 
-MKMETRIC2022 is a dataset with VKontakte bot identifiers and their metrics:
+MKMETRIC2022 is the dataset with VKontakte bot identifiers and their metrics:
 
 | # | metric       | metric description             |
 | ------------- | ---------- | -------------------------------- |
