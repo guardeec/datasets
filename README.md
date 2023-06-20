@@ -29,13 +29,13 @@ Each media is a separate CSV file with the following structure:
 |6| datetime      | datetime in a string format yyyy-MM-dd HH:mm:ss  
 |7| media         | name of the media  
 
-More details about dataset are presented in the [preprint](https://www.researchgate.net/publication/371276411_Leveraging_Machine_Learning_and_Russian_Social_Media_Data_to_Expose_Censorship_and_Public_Opinion_Bias_in_the_Russian-Ukrainian_War) (accepted) (cite as):
+More details about dataset are presented in the [preprint] (cite as):
 
 ```bibtex
 >@article{MKWM2022,
         title={Leveraging Machine Learning and Russian Social Media Data to Expose Censorship and Public Opinion Bias in the Russian-Ukrainian War},
         author={Kolomeets, Maxim and Lei, Shi},
-        journal={Workshop on Mining Actionable Insights from Social Networks (MAISoN) in conjunction with the 32nd International Joint Conference on Artificial Intelligence (IJCAI 2023)},
+        journal={},
         volume={},
         number={},
         year={2023},
