@@ -2,6 +2,7 @@
 
 The repository contains several datasets related to the cybersecurity of social networks for research in bot detection, misinformation analysis, bot market analysis, bot metrics calculation, etc.
 
+<!---
 ### MKWM2022
 
 <p align="center">
@@ -42,6 +43,7 @@ More details about dataset are presented in the [preprint] (cite as):
         publisher={}
 }
 ```
+-->
 
 ### MKMETRIC2022
 
