@@ -105,6 +105,14 @@ More details about metrics are presented in the [paper](https://link.springer.co
         year={2023},
         publisher={Springer Nature}
 }
+
+>@inproceedings{FromDetectionToDissection,
+        title={From Detection to Dissection: Unraveling Bot Characteristics in the VKontakte Social Network},
+        author={Chechulin, Andrey and Kolomeets, Maxim},
+        booktitle={Machine Intelligence in Networked Data and Systems workshop co-located with 16th International Conference on Communication Systems & Networks (COMSNET-24)},
+        year={2024}
+}
+
 ```
 
 ### MKVKTT2021
