@@ -53,7 +53,7 @@ More details about dataset are presented in the [preprint] (cite as):
 
 The MKPHOTO2023 dataset is designed to research the types of profile photos used by different types of malicious social bots.
 
-Available via [Kaggle]([https://link.springer.com/article/10.1007/s13278-023-01038-3](https://www.kaggle.com/datasets/guardeec/mkphoto2023)).
+Available via [Kaggle](https://www.kaggle.com/datasets/guardeec/mkphoto2023).
 
 ### MKMETRIC2022
 
