@@ -45,6 +45,16 @@ More details about dataset are presented in the [preprint] (cite as):
 ```
 -->
 
+### MKPHOTO2023
+
+<p align="center">
+  <img src="https://github.com/guardeec/datasets/blob/main/readme_img/MKPHOTO2023.png?raw=true" alt="metrics_logo" width="300" />
+</p>
+
+The MKPHOTO2023 dataset is designed to research the types of profile photos used by different types of malicious social bots.
+
+Available via [Kaggle]([https://link.springer.com/article/10.1007/s13278-023-01038-3](https://www.kaggle.com/datasets/guardeec/mkphoto2023)).
+
 ### MKMETRIC2022
 
 <p align="center">
